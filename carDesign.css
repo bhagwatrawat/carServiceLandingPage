@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background-color: #fff;
+}
+nav{
+    background-color: black;
+   
+}
+header{
+    background-image: url("newbg.jpg") ;
+    
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-flow: column;
+    
+    min-height: calc(100vh - 50px);
+}
+.container{
+    margin: 0 auto;
+    max-width:100%;
+    width:1000px;
+    color: white;
+    list-style: none;
+}
+nav div ui{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1rem 1rem;
+}
+nav .logo{
+    display: flex;
+    font-size: 2rem;
+    color: white;
+    margin-top: 10px;
+}
+nav li a {
+    color: white;
+    padding: 1rem 1rem;
+    text-decoration: none;
+}
+.highlight{
+    background-color: #00c2ff;
+    text-decoration: none;
+    padding: 0.8rem;
+    color:white;
+
+}
+.selected{
+    font-weight: bold;
+}
+header .content{
+    margin:auto;
+    
+}
+nav .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+}
+.container h1{
+    color: #00c2ff;
+    font-weight: bold;
+}
+footer{
+    background-color: black;
+    height: 50px;
+}
+footer strong{
+    color: #00c2ff;
+}
+footer p {
+    margin:0;
+}
+
+@media screen  and (max-width : 700px){
+    nav .container {
+        flex-direction: column;
+    }
+    nav div ui {
+        flex-direction: column;
+    }
+    nav li {
+        margin :0.5rem;
+    }
+}
